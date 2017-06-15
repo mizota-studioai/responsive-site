@@ -1,0 +1,66 @@
+@import "compass";
+
+
+#topbox {
+    width:100%;
+    height:500px;
+    
+    .topimg {
+    background-image:url("../img/top.jpg");
+    position:absolute;
+    height:500px;
+    width:100%;
+    background-size: cover;
+    background-position: center center;
+    top:0;
+    left:0;
+    right:0;
+    }
+}
+
+#column3 {
+    @include display-flex;
+    flex-direction: row;
+    
+        .boxx {
+        border: solid 6px BLACK;
+        margin: 10px;
+        flex: 1;
+        margin-right: 1em;
+    }
+
+}
+
+#footerbox {
+    background-color:glay;
+    @include display-flex;
+    @include flex(1);
+    flex-direction: row;
+    
+        .boxbutton {
+        margin: 10px;
+        flex: 1;
+    }
+
+}
+
+@media (max-width:768px){
+    #column3 {
+        flex-direction: column;
+    }
+    #topbox {
+    width:100%;
+    height:250px;
+        .topimg {
+    background-image:url("../img/top.jpg");
+    position:absolute;
+    height:250px;
+    width:100%;
+    background-size: cover;
+    background-position: center center;
+    top:0;
+    left:0;
+    right:0;
+    }
+    }
+}
