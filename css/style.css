@@ -1,16 +1,15 @@
-#topbox {
+.txtcenter {
+  text-align: center; }
+
+#topbox .topimg {
+  background-image: url("../img/top.jpg");
+  height: 500px;
   width: 100%;
-  height: 500px; }
-  #topbox .topimg {
-    background-image: url("../img/top.jpg");
-    position: absolute;
-    height: 500px;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    top: 0;
-    left: 0;
-    right: 0; }
+  background-size: cover;
+  background-position: center center;
+  top: 0;
+  left: 0;
+  right: 0; }
 
 #column3 {
   display: -webkit-flex;
@@ -22,16 +21,17 @@
     flex: 1;
     margin-right: 1em; }
 
-#footerbox {
-  background-color: glay;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex: 1;
-  flex: 1;
-  flex-direction: row; }
-  #footerbox .boxbutton {
-    margin: 10px;
-    flex: 1; }
+#footerbox .boxbutton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 30%;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #bea300; }
 
 @media (max-width: 768px) {
   #column3 {

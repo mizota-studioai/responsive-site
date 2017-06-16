@@ -1,13 +1,13 @@
 @import "compass";
 
+.txtcenter{
+    text-align: center;
+}
 
 #topbox {
-    width:100%;
-    height:500px;
     
     .topimg {
     background-image:url("../img/top.jpg");
-    position:absolute;
     height:500px;
     width:100%;
     background-size: cover;
@@ -32,14 +32,16 @@
 }
 
 #footerbox {
-    background-color:glay;
-    @include display-flex;
-    @include flex(1);
-    flex-direction: row;
     
         .boxbutton {
-        margin: 10px;
-        flex: 1;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5px;
+    margin-bottom:5px;
+    width:30%;
+    @include border-radius(4px);
+    background-color:#bea300;
     }
 
 }
